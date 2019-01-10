@@ -1,0 +1,18 @@
+@import "external-fonts/googlefont-lato.scss";
+@import "font-awesome/library.scss";
+
+.App-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+}
+
+.App-greeting {
+	font-family: Lato;
+	margin: 40px 0 20px 0;
+}
+
+.App-logo {
+	width: 40px;
+}
