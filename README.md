@@ -65,10 +65,10 @@ $ yarn run prod
 
 ```shell
 
-# CLI prettier watcher formats files when file is modified.
+# CLI prettier watcher formats files when modified.
 $ yarn run pretty
 
-# Lints ./src/*.js files using ESLint.
+# Lints ./src/*.jsx? files using ESLint.
 $ yarn run lint
 
 # Generate project favicons.
