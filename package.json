@@ -1,10 +1,17 @@
 {
-	"name": "wapplr",
+	"name": "wapplr4",
 	"version": "0.0.1",
-	"description": "A simple react (w)eb-(app)-bui(l)de(r)/starter using webpack",
+	"description": "A simple react (w)eb-(app)-bui(l)de(r)/starter using webpack 4",
 	"main": "index.js",
+	"bugs": {
+		"url": "https://github.com/cgabriel5/wapplr-webpack4-react/issues"
+	},
+	"homepage": "https://github.com/cgabriel5/wapplr-webpack4-react#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cgabriel5/wapplr-webpack4-react.git"
+	},
 	"license": "MIT",
-	"private": true,
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "^5.5.0",
 		"fastclick": "^1.0.6",
@@ -70,7 +77,11 @@
 		"dll": "cross-env NODE_ENV=production webpack --config ./configs/webpack.js-dll.config.js --mode development --profile --progress",
 		"prod": "cross-env NODE_ENV=production webpack --config ./configs/webpack.config.js --mode production --hide-modules",
 		"pretty": "prettier-cli-watcher --configpath='configs/prettier.config.json'",
-		"lint": "cross-env ESLINT_CFS_VERBOSE=true ./node_modules/eslint/bin/eslint.js -c='configs/eslint.config.js' --ignore-path='configs/eslintignore' --format='simple' '**/*.{js,jsx}'",
+		"lint": "cross-env ESLINT_CFS_VERBOSE=true ./node_modules/eslint/bin/eslint.js -c='configs/eslint.config.js' --ignore-path='configs/eslintignore' --format='simple' '**/*.{js,jsx}'; exit 0",
 		"favicon": "./node_modules/gulp/bin/gulp.js generate-favicon"
+	},
+	"engines": {
+		"node": ">=8.14.0",
+		"npm": ">=6.4.1"
 	}
 }
