@@ -12,7 +12,7 @@
 
 ### Quick Start
 
-1. Clone repo &mdash; `$ git clone https://github.com/cgabriel5/wapplr4.git "my-app"`
+1. Clone repo &mdash; `$ git clone https://github.com/cgabriel5/wapplr-webpack4-react.git "my-app"`
 2. Install dependencies... &mdash; `$ yarn install`
    - Then start webpack with a script using `yarn` or `npm`:
      - Development: `$ yarn run dev`.
