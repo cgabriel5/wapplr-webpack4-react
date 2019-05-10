@@ -6,7 +6,7 @@ const config = require("eslint-config-simple");
 // Customize config.
 config.settings = {
 	react: {
-		version: "16.6.3"
+		version: "16.8.6"
 	}
 };
 

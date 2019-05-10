@@ -47,7 +47,7 @@ const __copy = new plugins.copy(
 			// ignore: ["*.html", "*.md"]
 		}
 	],
-	{ debug: false }
+	{ logLevel: "silent" }
 );
 const __htmlminifier = new plugins.htmlminifier({
 	// [https://github.com/jantimon/html-webpack-plugin#minification]
@@ -71,8 +71,10 @@ const __plugins = [
 	new webpack.DefinePlugin({
 		"process.env.NODE_ENV": JSON.stringify(mode)
 	}),
-	new plugins.clean(["../dist"], {
-		allowExternal: true
+	new plugins.clean({
+		// [https://github.com/johnagan/clean-webpack-plugin/issues/106]
+		dangerouslyAllowCleanPatternsOutsideProject: true,
+		dry: false
 	}),
 	new happypack({
 		id: "html",
@@ -321,7 +323,7 @@ module.exports = smp.wrap({
 							name: new_filename,
 							outputPath: "assets/fonts",
 							// [https://github.com/webpack-contrib/mini-css-extract-plugin/issues/222#issuecomment-417929423]
-							publicPath: is_prod ? "../assets/fonts" : null
+							publicPath: is_prod ? "../assets/fonts" : ""
 						}
 					}
 				],

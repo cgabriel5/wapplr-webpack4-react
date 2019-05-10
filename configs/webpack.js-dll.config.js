@@ -182,7 +182,7 @@ module.exports = {
 							name: new_filename,
 							outputPath: "assets/fonts",
 							// [https://github.com/webpack-contrib/mini-css-extract-plugin/issues/222#issuecomment-417929423]
-							publicPath: is_prod ? "../assets/fonts" : null
+							publicPath: is_prod ? "../assets/fonts" : ""
 						}
 					}
 				]
